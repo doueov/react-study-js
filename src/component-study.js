@@ -7,6 +7,11 @@ function MyComponent() {
     return <div>Hello</div>
 }
 
+function MyPropsComponent(props) {
+    return <div>{JSON.stringify(props)}</div>
+}
+
 root.render(<div>
     <MyComponent />
+    <MyPropsComponent a='abc' b={1234} c={{ a: 100 }} />
 </div>)
