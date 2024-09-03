@@ -13,8 +13,8 @@ function MyPropsComponent(props) {
 }
 
 // props로 name 값을 전달받아서 출력하는 NamePrint 컴포넌트 정의
-function NamePrint(props) {
-    return <div>{props.name} {props.age}</div>
+function NamePrint({name, age}) {
+    return <div>{name} {age}</div>
 }
 
 root.render(<div>
