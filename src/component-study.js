@@ -12,6 +12,6 @@ function MyPropsComponent(props) {
 }
 
 root.render(<div>
-    <MyComponent />
+    {MyPropsComponent({ a: "abc", b: 1234, c: { a: 100 } })}
     <MyPropsComponent a='abc' b={1234} c={{ a: 100 }} />
 </div>)
